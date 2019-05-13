@@ -1,0 +1,10 @@
+C:\Users\Raymon\source\repos\HighScore\HighScore\bin\Debug\HighScore.exe.config
+C:\Users\Raymon\source\repos\HighScore\HighScore\bin\Debug\HighScore.exe
+C:\Users\Raymon\source\repos\HighScore\HighScore\bin\Debug\HighScore.pdb
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.csprojAssemblyReference.cache
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.MainForm.resources
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.Properties.Resources.resources
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.csproj.GenerateResource.cache
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.csproj.CoreCompileInputs.cache
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.exe
+C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.pdb
