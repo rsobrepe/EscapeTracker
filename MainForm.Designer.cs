@@ -29,8 +29,22 @@
         private void InitializeComponent()
         {
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.lblDa = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.txtClues = new System.Windows.Forms.TextBox();
+            this.lblClues = new System.Windows.Forms.Label();
+            this.txtDuration = new System.Windows.Forms.TextBox();
+            this.lblDuration = new System.Windows.Forms.Label();
+            this.checkFail = new System.Windows.Forms.CheckBox();
+            this.checkPass = new System.Windows.Forms.CheckBox();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.txtTimeSlot = new System.Windows.Forms.TextBox();
+            this.lblTimeSlot = new System.Windows.Forms.Label();
+            this.comboRoom = new System.Windows.Forms.ComboBox();
+            this.lblRoom = new System.Windows.Forms.Label();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSave = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,21 +59,7 @@
             this.editWeekly = new System.Windows.Forms.ToolStripMenuItem();
             this.editMonthly = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblDa = new System.Windows.Forms.Label();
-            this.lblRoom = new System.Windows.Forms.Label();
-            this.comboRoom = new System.Windows.Forms.ComboBox();
             this.pnlList = new System.Windows.Forms.Panel();
-            this.lblTimeSlot = new System.Windows.Forms.Label();
-            this.txtTimeSlot = new System.Windows.Forms.TextBox();
-            this.lblResult = new System.Windows.Forms.Label();
-            this.checkPass = new System.Windows.Forms.CheckBox();
-            this.checkFail = new System.Windows.Forms.CheckBox();
-            this.lblDuration = new System.Windows.Forms.Label();
-            this.txtDuration = new System.Windows.Forms.TextBox();
-            this.lblClues = new System.Windows.Forms.Label();
-            this.txtClues = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.pnlTitle.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.mnuMain.SuspendLayout();
@@ -77,14 +77,37 @@
             this.pnlTitle.Size = new System.Drawing.Size(776, 66);
             this.pnlTitle.TabIndex = 0;
             // 
+            // lblDa
+            // 
+            this.lblDa.AutoSize = true;
+            this.lblDa.BackColor = System.Drawing.Color.Transparent;
+            this.lblDa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDa.ForeColor = System.Drawing.Color.Red;
+            this.lblDa.Location = new System.Drawing.Point(650, 36);
+            this.lblDa.Name = "lblDa";
+            this.lblDa.Size = new System.Drawing.Size(74, 16);
+            this.lblDa.TabIndex = 2;
+            this.lblDa.Text = "date here";
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.Transparent;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(607, 36);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(45, 16);
+            this.lblDate.TabIndex = 1;
+            this.lblDate.Text = "Date:";
+            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Rockwell Nova Cond", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(255, 12);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(265, 42);
+            this.lblTitle.Size = new System.Drawing.Size(311, 37);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "High Score Tracker";
             // 
@@ -108,6 +131,125 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(358, 316);
             this.pnlMain.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(103, 254);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtClues
+            // 
+            this.txtClues.Location = new System.Drawing.Point(112, 207);
+            this.txtClues.Name = "txtClues";
+            this.txtClues.Size = new System.Drawing.Size(121, 20);
+            this.txtClues.TabIndex = 10;
+            // 
+            // lblClues
+            // 
+            this.lblClues.AutoSize = true;
+            this.lblClues.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClues.Location = new System.Drawing.Point(8, 205);
+            this.lblClues.Name = "lblClues";
+            this.lblClues.Size = new System.Drawing.Size(106, 20);
+            this.lblClues.TabIndex = 9;
+            this.lblClues.Text = "Clues Used:";
+            // 
+            // txtDuration
+            // 
+            this.txtDuration.Location = new System.Drawing.Point(112, 166);
+            this.txtDuration.Name = "txtDuration";
+            this.txtDuration.Size = new System.Drawing.Size(121, 20);
+            this.txtDuration.TabIndex = 8;
+            // 
+            // lblDuration
+            // 
+            this.lblDuration.AutoSize = true;
+            this.lblDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDuration.Location = new System.Drawing.Point(23, 164);
+            this.lblDuration.Name = "lblDuration";
+            this.lblDuration.Size = new System.Drawing.Size(83, 20);
+            this.lblDuration.TabIndex = 7;
+            this.lblDuration.Text = "Duration:";
+            // 
+            // checkFail
+            // 
+            this.checkFail.AutoSize = true;
+            this.checkFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkFail.Location = new System.Drawing.Point(111, 137);
+            this.checkFail.Name = "checkFail";
+            this.checkFail.Size = new System.Drawing.Size(53, 20);
+            this.checkFail.TabIndex = 6;
+            this.checkFail.Text = "Fail";
+            this.checkFail.UseVisualStyleBackColor = true;
+            // 
+            // checkPass
+            // 
+            this.checkPass.AutoSize = true;
+            this.checkPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkPass.Location = new System.Drawing.Point(111, 111);
+            this.checkPass.Name = "checkPass";
+            this.checkPass.Size = new System.Drawing.Size(62, 20);
+            this.checkPass.TabIndex = 5;
+            this.checkPass.Text = "Pass";
+            this.checkPass.UseVisualStyleBackColor = true;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.Location = new System.Drawing.Point(41, 111);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(66, 20);
+            this.lblResult.TabIndex = 4;
+            this.lblResult.Text = "Result:";
+            // 
+            // txtTimeSlot
+            // 
+            this.txtTimeSlot.Location = new System.Drawing.Point(112, 70);
+            this.txtTimeSlot.Name = "txtTimeSlot";
+            this.txtTimeSlot.Size = new System.Drawing.Size(121, 20);
+            this.txtTimeSlot.TabIndex = 3;
+            // 
+            // lblTimeSlot
+            // 
+            this.lblTimeSlot.AutoSize = true;
+            this.lblTimeSlot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeSlot.Location = new System.Drawing.Point(25, 70);
+            this.lblTimeSlot.Name = "lblTimeSlot";
+            this.lblTimeSlot.Size = new System.Drawing.Size(89, 20);
+            this.lblTimeSlot.TabIndex = 2;
+            this.lblTimeSlot.Text = "Time Slot:";
+            // 
+            // comboRoom
+            // 
+            this.comboRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboRoom.FormattingEnabled = true;
+            this.comboRoom.Items.AddRange(new object[] {
+            "Elevator",
+            "Criminal Binds",
+            "Kate\'s Motel",
+            "The Last Laugh",
+            "The Short Cut"});
+            this.comboRoom.Location = new System.Drawing.Point(111, 31);
+            this.comboRoom.Name = "comboRoom";
+            this.comboRoom.Size = new System.Drawing.Size(121, 21);
+            this.comboRoom.TabIndex = 1;
+            this.comboRoom.Text = "Choose Room";
+            // 
+            // lblRoom
+            // 
+            this.lblRoom.AutoSize = true;
+            this.lblRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoom.Location = new System.Drawing.Point(44, 29);
+            this.lblRoom.Name = "lblRoom";
+            this.lblRoom.Size = new System.Drawing.Size(61, 20);
+            this.lblRoom.TabIndex = 0;
+            this.lblRoom.Text = "Room:";         
             // 
             // mnuMain
             // 
@@ -135,19 +277,19 @@
             // mnuSave
             // 
             this.mnuSave.Name = "mnuSave";
-            this.mnuSave.Size = new System.Drawing.Size(180, 22);
+            this.mnuSave.Size = new System.Drawing.Size(107, 22);
             this.mnuSave.Text = "Save";
             // 
             // mnuView
             // 
             this.mnuView.Name = "mnuView";
-            this.mnuView.Size = new System.Drawing.Size(180, 22);
+            this.mnuView.Size = new System.Drawing.Size(107, 22);
             this.mnuView.Text = "Export";
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
-            this.mnuExit.Size = new System.Drawing.Size(180, 22);
+            this.mnuExit.Size = new System.Drawing.Size(107, 22);
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
@@ -164,19 +306,19 @@
             // mnuDaily
             // 
             this.mnuDaily.Name = "mnuDaily";
-            this.mnuDaily.Size = new System.Drawing.Size(180, 22);
+            this.mnuDaily.Size = new System.Drawing.Size(119, 22);
             this.mnuDaily.Text = "Daily";
             // 
             // mnuWeekly
             // 
             this.mnuWeekly.Name = "mnuWeekly";
-            this.mnuWeekly.Size = new System.Drawing.Size(180, 22);
+            this.mnuWeekly.Size = new System.Drawing.Size(119, 22);
             this.mnuWeekly.Text = "Weekly";
             // 
             // mnuMonthly
             // 
             this.mnuMonthly.Name = "mnuMonthly";
-            this.mnuMonthly.Size = new System.Drawing.Size(180, 22);
+            this.mnuMonthly.Size = new System.Drawing.Size(119, 22);
             this.mnuMonthly.Text = "Monthly";
             // 
             // mnuEdit
@@ -192,19 +334,19 @@
             // editDaily
             // 
             this.editDaily.Name = "editDaily";
-            this.editDaily.Size = new System.Drawing.Size(180, 22);
+            this.editDaily.Size = new System.Drawing.Size(119, 22);
             this.editDaily.Text = "Daily";
             // 
             // editWeekly
             // 
             this.editWeekly.Name = "editWeekly";
-            this.editWeekly.Size = new System.Drawing.Size(180, 22);
+            this.editWeekly.Size = new System.Drawing.Size(119, 22);
             this.editWeekly.Text = "Weekly";
             // 
             // editMonthly
             // 
             this.editMonthly.Name = "editMonthly";
-            this.editMonthly.Size = new System.Drawing.Size(180, 22);
+            this.editMonthly.Size = new System.Drawing.Size(119, 22);
             this.editMonthly.Text = "Monthly";
             // 
             // mnuHelp
@@ -212,56 +354,6 @@
             this.mnuHelp.Name = "mnuHelp";
             this.mnuHelp.Size = new System.Drawing.Size(44, 20);
             this.mnuHelp.Text = "Help";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.BackColor = System.Drawing.Color.Transparent;
-            this.lblDate.Font = new System.Drawing.Font("Rockwell Nova Cond", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(607, 36);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(37, 18);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "Date:";
-            // 
-            // lblDa
-            // 
-            this.lblDa.AutoSize = true;
-            this.lblDa.BackColor = System.Drawing.Color.Transparent;
-            this.lblDa.Font = new System.Drawing.Font("Rockwell Nova Cond", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDa.ForeColor = System.Drawing.Color.Red;
-            this.lblDa.Location = new System.Drawing.Point(650, 36);
-            this.lblDa.Name = "lblDa";
-            this.lblDa.Size = new System.Drawing.Size(58, 18);
-            this.lblDa.TabIndex = 2;
-            this.lblDa.Text = "date here";
-            // 
-            // lblRoom
-            // 
-            this.lblRoom.AutoSize = true;
-            this.lblRoom.Font = new System.Drawing.Font("Rockwell Nova Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoom.Location = new System.Drawing.Point(44, 29);
-            this.lblRoom.Name = "lblRoom";
-            this.lblRoom.Size = new System.Drawing.Size(53, 22);
-            this.lblRoom.TabIndex = 0;
-            this.lblRoom.Text = "Room:";
-            this.lblRoom.Click += new System.EventHandler(this.lblRoom_Click);
-            // 
-            // comboRoom
-            // 
-            this.comboRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboRoom.FormattingEnabled = true;
-            this.comboRoom.Items.AddRange(new object[] {
-            "Elevator",
-            "Criminal Binds",
-            "Kate\'s Motel",
-            "The Last Laugh",
-            "The Short Cut"});
-            this.comboRoom.Location = new System.Drawing.Point(103, 29);
-            this.comboRoom.Name = "comboRoom";
-            this.comboRoom.Size = new System.Drawing.Size(121, 21);
-            this.comboRoom.TabIndex = 1;
-            this.comboRoom.Text = "Choose Room";
             // 
             // pnlList
             // 
@@ -271,98 +363,6 @@
             this.pnlList.Name = "pnlList";
             this.pnlList.Size = new System.Drawing.Size(358, 316);
             this.pnlList.TabIndex = 3;
-            // 
-            // lblTimeSlot
-            // 
-            this.lblTimeSlot.AutoSize = true;
-            this.lblTimeSlot.Font = new System.Drawing.Font("Rockwell Nova Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeSlot.Location = new System.Drawing.Point(25, 70);
-            this.lblTimeSlot.Name = "lblTimeSlot";
-            this.lblTimeSlot.Size = new System.Drawing.Size(77, 22);
-            this.lblTimeSlot.TabIndex = 2;
-            this.lblTimeSlot.Text = "Time Slot:";
-            // 
-            // txtTimeSlot
-            // 
-            this.txtTimeSlot.Location = new System.Drawing.Point(103, 70);
-            this.txtTimeSlot.Name = "txtTimeSlot";
-            this.txtTimeSlot.Size = new System.Drawing.Size(121, 20);
-            this.txtTimeSlot.TabIndex = 3;
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Rockwell Nova Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(41, 111);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(56, 22);
-            this.lblResult.TabIndex = 4;
-            this.lblResult.Text = "Result:";
-            // 
-            // checkPass
-            // 
-            this.checkPass.AutoSize = true;
-            this.checkPass.Font = new System.Drawing.Font("Rockwell Nova Cond", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkPass.Location = new System.Drawing.Point(103, 113);
-            this.checkPass.Name = "checkPass";
-            this.checkPass.Size = new System.Drawing.Size(51, 22);
-            this.checkPass.TabIndex = 5;
-            this.checkPass.Text = "Pass";
-            this.checkPass.UseVisualStyleBackColor = true;
-            // 
-            // checkFail
-            // 
-            this.checkFail.AutoSize = true;
-            this.checkFail.Font = new System.Drawing.Font("Rockwell Nova Cond", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkFail.Location = new System.Drawing.Point(103, 136);
-            this.checkFail.Name = "checkFail";
-            this.checkFail.Size = new System.Drawing.Size(49, 22);
-            this.checkFail.TabIndex = 6;
-            this.checkFail.Text = "Fail";
-            this.checkFail.UseVisualStyleBackColor = true;
-            // 
-            // lblDuration
-            // 
-            this.lblDuration.AutoSize = true;
-            this.lblDuration.Font = new System.Drawing.Font("Rockwell Nova Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDuration.Location = new System.Drawing.Point(23, 164);
-            this.lblDuration.Name = "lblDuration";
-            this.lblDuration.Size = new System.Drawing.Size(74, 22);
-            this.lblDuration.TabIndex = 7;
-            this.lblDuration.Text = "Duration:";
-            // 
-            // txtDuration
-            // 
-            this.txtDuration.Location = new System.Drawing.Point(103, 167);
-            this.txtDuration.Name = "txtDuration";
-            this.txtDuration.Size = new System.Drawing.Size(121, 20);
-            this.txtDuration.TabIndex = 8;
-            // 
-            // lblClues
-            // 
-            this.lblClues.AutoSize = true;
-            this.lblClues.Font = new System.Drawing.Font("Rockwell Nova Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClues.Location = new System.Drawing.Point(14, 205);
-            this.lblClues.Name = "lblClues";
-            this.lblClues.Size = new System.Drawing.Size(83, 22);
-            this.lblClues.TabIndex = 9;
-            this.lblClues.Text = "Clues Used:";
-            // 
-            // txtClues
-            // 
-            this.txtClues.Location = new System.Drawing.Point(103, 205);
-            this.txtClues.Name = "txtClues";
-            this.txtClues.Size = new System.Drawing.Size(121, 20);
-            this.txtClues.TabIndex = 10;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(103, 254);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 11;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 

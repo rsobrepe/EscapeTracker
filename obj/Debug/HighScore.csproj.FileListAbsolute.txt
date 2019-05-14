@@ -8,3 +8,15 @@ C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.csproj.Gene
 C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.csproj.CoreCompileInputs.cache
 C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.exe
 C:\Users\Raymon\source\repos\HighScore\HighScore\obj\Debug\HighScore.pdb
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\bin\Debug\Times.mdf
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\bin\Debug\Times_log.ldf
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\bin\Debug\HighScore.exe.config
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\bin\Debug\HighScore.exe
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\bin\Debug\HighScore.pdb
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.csprojAssemblyReference.cache
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.MainForm.resources
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.Properties.Resources.resources
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.csproj.GenerateResource.cache
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.csproj.CoreCompileInputs.cache
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.exe
+C:\Users\rayPC\Documents\SoftwareDev\Tracker\EscapeTracker\obj\Debug\HighScore.pdb
